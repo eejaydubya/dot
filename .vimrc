@@ -1,10 +1,8 @@
 set guioptions-=T
 set backspace=2
 set backspace=indent,eol,start
-colorscheme monokai
-" This is for gvim with 2x scaled Plasma 5 on 4k
-" guifont format is different for Windoze
-set guifont=Inconsolata\ Medium\ 10
+colorscheme molokai
+set guifont=Source\ Code\ Pro\ 11
 set autoread
 set tabstop=4
 set shiftwidth=4
@@ -15,3 +13,11 @@ set hlsearch
 set showmatch
 set ruler
 
+" Vim splits config as per:
+" https://robots.thoughtbot.com/vim-splits-move-faster-and-more-naturally
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+set splitbelow
+set splitright
